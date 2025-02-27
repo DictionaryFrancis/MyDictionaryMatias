@@ -14,7 +14,7 @@ app.use('/css', express.static(path.join(__dirname, 'public/css')));
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('index', { title: "MyDictionaryMatias" });
+    res.render('index', { title: "Dictionary Matias" });
 });
 
 app.listen(PORT, () => {

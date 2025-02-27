@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="/js/script.js"></script>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="menu-toggle" id="mobile-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+
+    <div class="navbar">
+        <div class="nav-flex">
+
+            <div class="nav-logo">
+                <a href="#home">Dictionary Matias</a>
             </div>
+            <div class="nav-rest">
 
-            <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Articles</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Articles
+                        <i class="fa fa-caret-down"></i>
+                    </button>
                     <div class="dropdown-content">
-                        <a href="#">Tech</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Guides</a>
+                        <a href="#">Linux</a>
+                        <a href="#">NoSQL</a>
                     </div>
-                </li>
-            </ul>
-
-            <div class="logo">
-                <img src="/img/logo.png" alt="Logo">
+                    
+                </div>
+                <a href="#home">About</a>
             </div>
         </div>
-    </nav>
 
+    </div>
     <main>
-        <h1>Welcome to My Blog</h1>
-        <p>This is a place where I share my journey in IT.</p>
+        <header>
+            <img src="img/bulb.png" alt="light">
+            <h1>Welcome to Dictionary Matias</h1>
+            <p>The name "Dictionary Matias" reflects my goal to compile and organize information, much like a
+                -dictionary-</p>
+        </header>
     </main>
+    <hr>
+    <article>
+        <h2>Latest articles</h2>
+
+        <div class="card">
+            <img src="img/smart-light.png" alt="light">
+            <div class="card-content">
+                <h2>Card Title</h2>
+                <p>This is a simple description inside the card. It provides brief information about the content.</p>
+            </div>
+        </div>
+
+    </article>
+
 
 </body>
+
 </html>
